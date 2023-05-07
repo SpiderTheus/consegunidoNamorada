@@ -3,8 +3,8 @@ const butaoN = document.querySelector(".nop")
 butaoN.addEventListener("mouseover", function() {
     butaoN.style.top =  Math.random() * 400 + "px"
     butaoN.style.left =  Math.random() * 400 + "px"
-    butaoN.style.buttom =  Math.random() * 400 + "px"
-    butaoN.style.rigth =  Math.random() * 400 + "px"
+   /*  butaoN.style.buttom =  Math.random() * 400 + "px"
+    butaoN.style.rigth =  Math.random() * 400 + "px" */
 })
 
 
