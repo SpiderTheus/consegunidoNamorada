@@ -10,8 +10,9 @@
     .container {
         //iniciando estilo do app
         height: 780px;
-        
+       
         .tittle {
+            position: relative;
             margin-top: 60px;
             text-align: center;
             h1{
@@ -28,6 +29,7 @@
             justify-content: center;
             gap: 77px;
             button {
+                position: relative;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 32px;
@@ -37,7 +39,17 @@
                 height: 81px;
                 background: #F13E5C;
                 border-radius: 10px;
+
+                transition: all .3s;  
             }
+            .sim {
+                cursor: pointer;
+                &:hover {
+                    scale: 105%;
+                    background: #f83253;
+                }
+            }
+          
             margin-bottom: 90px;
         }
         footer {
@@ -54,5 +66,32 @@
 
 
     }
+    // classes para adcionar no js "footer" e "img"
+
+   
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+          }
+        
+        50% {
+            transform: scale(1.1);
+          }
+
+        
+
+        100% {
+            transform: scale(1);
+          }
+        }
+
+    .core {
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+    }    
+
 }
+
 
